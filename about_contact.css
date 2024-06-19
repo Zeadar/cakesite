@@ -1,0 +1,29 @@
+/* this file is shared with about.html and contact.html due to the pages similarity */
+.text {
+  font-size: 2rem;
+  color: var(--darkForegroundColor);
+  /* no need for top and bottom margin when text is centered */
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+}
+
+/* The text would crop on really small screens... */
+/* this turned out to be a good policy on all pages */
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}

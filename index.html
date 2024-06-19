@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple modern HTML template" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/brands.min.css" />
+    <title>Munamii Cakery</title>
+  </head>
+  <body>
+    <header>
+      <button class="navButton cabin-sketch-bold" onclick="home()">Home</button>
+      <button class="navButton cabin-sketch-bold" onclick="products()">Products</button>
+      <button class="navButton cabin-sketch-bold" onclick="contact()">Contact</button>
+      <button class="navButton cabin-sketch-bold" onclick="about()">About</button>
+    </header>
+    <main>
+      <iframe id="view" src="./home.html" frameborder="0"></iframe>
+    </main>
+    <footer>
+      <div class="footLink">
+        <a class="cabin-sketch-bold" href="https://www.instagram.com/munamii.cakery/"
+          >Instagram<i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <div class="footLink">
+        <a class="cabin-sketch-bold" href="https://www.facebook.com/munamiicupcakes/"
+          >Facebook<i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+      <div class="footLink">
+        <a class="cabin-sketch-bold" href="mailto:example@example.com">Email</a>
+      </div>
+    </footer>
+    <script>
+      const view = document.getElementById("view");
+
+      function home() {
+        view.src = "./home.html";
+      }
+
+      function products() {
+        view.src = "./products.html";
+      }
+
+      function contact() {
+        view.src = "./contact.html";
+      }
+
+      function about() {
+        view.src = "./about.html";
+      }
+    </script>
+  </body>
+</html>

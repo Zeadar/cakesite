@@ -1,0 +1,35 @@
+#logo {
+  border-radius: 50%;
+  width: 80%;
+  /* image source is 600x600 */
+  max-width: 600px;
+}
+
+/* The overlay makes the logo blend in the page much better */
+/* since the image has a white background */
+#overlay {
+  position: absolute;
+  background-color: var(--mainBackgroundColor);
+  mix-blend-mode: multiply;
+  width: 80%;
+  height: 80%;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+#text {
+  font-size: 2rem;
+  color: var(--darkForegroundColor);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}

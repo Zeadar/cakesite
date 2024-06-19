@@ -1,0 +1,79 @@
+a:link {
+  color: var(--darkForegroundColor);
+}
+
+a:visited {
+  color: var(--darkForegroundColor);
+}
+
+.navbar {
+  background-color: var(--mainBackgroundColor);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: solid;
+  border-color: var(--darkForegroundColor);
+  border-radius: 1rem;
+}
+
+.title {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  color: var(--darkForegroundColor);
+}
+
+.spacer {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.caketainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 63rem) {
+  .caketainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 42rem) {
+  .caketainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.itemImage {
+  width: 20rem;
+  margin: 0.5rem;
+  border-radius: 12%;
+}
+
+.itemName {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+}
+
+/* The text would crop on really small screens... */
+/* this turned out to be a good policy on all pages */
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
