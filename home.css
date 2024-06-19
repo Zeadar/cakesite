@@ -1,8 +1,9 @@
 #logo {
   border-radius: 50%;
   width: 80%;
-  /* image source is 600x600 */
   max-width: 600px;
+  max-height: 600px;
+  /* image source is 600x600 */
 }
 
 /* The overlay makes the logo blend in the page much better */
@@ -10,11 +11,8 @@
 #overlay {
   position: absolute;
   background-color: var(--mainBackgroundColor);
+  /* background-color: yellowgreen; */
   mix-blend-mode: multiply;
-  width: 80%;
-  height: 80%;
-  max-width: 600px;
-  max-height: 600px;
 }
 
 #text {

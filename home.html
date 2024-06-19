@@ -17,5 +17,23 @@
         celebrations. Browse around to discover what you would like to buy.
       </span>
     </div>
+
+    <script>
+      /*
+      Couldn't figure out how to cover the overlay over the logo with css
+      (an <img> and a <div> behave very differently)
+      so here is some javascript setting identical values instead
+      */
+      function resize() {
+        const rect = document.getElementById("logo").getBoundingClientRect();
+        const overlay = document.getElementById("overlay");
+        overlay.style.top = rect.top + "px";
+        overlay.style.bottom = rect.bottom + "px";
+        overlay.style.width = rect.width + "px";
+        overlay.style.height = rect.height + "px";
+      }
+      resize();
+      window.addEventListener("resize", resize);
+    </script>
   </body>
 </html>
